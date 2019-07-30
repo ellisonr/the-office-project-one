@@ -116,6 +116,21 @@ const questionsOneToFive = [
 		['Tony', 'Devon', 'Dwight', 'Todd', 'Andy'],
 		'Devon'
 	),
+	new Question(
+		'Who won the I Moved 2.5 Billion Units of Paper Material Award?',
+		['Darryl', 'Jim', 'Stanley', 'Andy', 'Dwight'],
+		'Darryl'
+	),
+	new Question(
+		'Who won the Slower Than Dwight On A Skateboard Award?',
+		['Creed', 'Toby', 'Stanley', 'Kevin', 'Roy'],
+		'Toby'
+	),
+	new Question(
+		'Who won the Same Birthday As Eva Longoria Award?',
+		['Holly', 'Karen', 'Dwight', 'Angela', 'Michael'],
+		'Michael'
+	),
 ];
 
 //questions for Seasons 6-9
@@ -194,6 +209,21 @@ const questionsSixToNine = [
 		'Who won the Gun Collector Award?',
 		['Robert', 'Dwight', 'Oscar', 'Jo', 'Nellie'],
 		'Jo'
+	),
+	new Question(
+		'Who won the Better-Looking Version of Andy Award?',
+		['Danny', 'Clark', 'Deangelo', 'Gabe', 'Roy'],
+		'Danny'
+	),
+	new Question(
+		'Who won the Finer Things Club Member Award?',
+		['Andy', 'Erin', 'Phyllis', 'Oscar', 'Holly'],
+		'Oscar'
+	),
+	new Question(
+		"Who won the Dwight's Caffeine Corner Employee Award?",
+		['Todd', 'Hank', 'Plop', 'Ryan', 'Meredith'],
+		'Hank'
 	),
 ];
 
