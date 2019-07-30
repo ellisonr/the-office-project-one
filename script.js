@@ -229,8 +229,7 @@ function showCurrentQuestion() {
 			.replace(':', '')
 			.replace('.', '')
 			.replace("'", '')
-			.replace('/', '')
-			.toLowerCase();
+			.replace('/', '');
 		let indexOfDash = replacedItem.indexOf('-');
 		if (indexOfDash >= 0) {
 			replacedItem = replacedItem.substring(0, indexOfDash);

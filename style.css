@@ -296,3 +296,33 @@ img {
 	margin: 0 auto;
 	line-height: 120%;
 }
+
+@media screen and (max-width: 1024px) {
+	.answers ul li {
+		flex: 0 0 23%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.answers ul li {
+		flex: 0 0 40%;
+	}
+
+	#result {
+		font-size: 22px;
+	}
+
+	.question-container .question {
+		font-size: 28px;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	main {
+		width: 90%;
+	}
+
+	.answers ul li {
+		flex: 0 0 48%;
+	}
+}
