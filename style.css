@@ -299,7 +299,7 @@ img {
 
 @media screen and (max-width: 1024px) {
 	.answers ul li {
-		flex: 0 0 23%;
+		flex: 0 0 20%;
 	}
 }
 
@@ -309,20 +309,20 @@ img {
 	}
 
 	#result {
-		font-size: 22px;
+		font-size: 18px;
 	}
 
 	.question-container .question {
-		font-size: 28px;
+		font-size: 25px;
 	}
 }
 
 @media screen and (max-width: 520px) {
 	main {
-		width: 90%;
+		width: 80%;
 	}
 
 	.answers ul li {
-		flex: 0 0 48%;
+		flex: 0 0 40%;
 	}
 }
