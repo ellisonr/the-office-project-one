@@ -181,7 +181,7 @@ const questionsSixToNine = [
 		'Clark'
 	),
 	new Question(
-		'Who won the Co-Founder of the Group "Subtle Sexuality" Award?',
+		'Who won the Also Named Kelly Award?',
 		['Phyllis', 'Pam', 'Michael', 'Erin', 'Ryan'],
 		'Erin'
 	),
