@@ -127,9 +127,9 @@ const questionsOneToFive = [
 		'Toby'
 	),
 	new Question(
-		'Who won the Same Birthday As Eva Longoria Award?',
-		['Holly', 'Karen', 'Dwight', 'Angela', 'Michael'],
-		'Michael'
+		'Who won the Big William Hung Fan Award?',
+		['Danny', 'Angela', 'Dwight', 'Todd', 'Hank'],
+		'Todd'
 	),
 ];
 
@@ -141,9 +141,9 @@ const questionsSixToNine = [
 		'Holly'
 	),
 	new Question(
-		'Who won the Big William Hung Fan Award?',
-		['Danny', 'Angela', 'Dwight', 'Todd', 'Hank'],
-		'Todd'
+		'Who won the Same Birthday As Eva Longoria Award?',
+		['Holly', 'Karen', 'Dwight', 'Angela', 'Michael'],
+		'Michael'
 	),
 	new Question(
 		"Who won the I've Learned To Tune Myself Out Award?",
