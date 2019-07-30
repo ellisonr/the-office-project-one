@@ -14,6 +14,31 @@ class Question {
 }
 
 //create Quiz class
+class Quiz {
+	constructor(questions) {
+		this.questions = questions;
+		this.score = 0;
+		this.questionNum = 0;
+	}
+
+	increaseScore() {
+		this.score++;
+	}
+
+	getCurrentQuestion() {
+		return this.questions[this.questionNum];
+	}
+
+	nextQuestion() {
+		this.questionNum++;
+	}
+
+	areQuestionsDone() {
+		if (this.questionNum === this.questions.length) {
+			return true;
+		} else return false;
+	}
+}
 //questions for Seasons 1-5
 const questionsOneToFive = [
 	new Question(
@@ -173,7 +198,59 @@ const questionsSixToNine = [
 ];
 
 //set variables for necessary querySelectors
+const questionNumber = document.querySelector('.question-number');
+const oldQuizButton = document.querySelector('#old-quiz');
+const newQuizButton = document.querySelector('#new-quiz');
+const nextButton = document.querySelector('.next-button');
+const answers = document.querySelector('.answers');
+const overlay = document.querySelector('.overlay');
+const result = document.querySelector('#result');
+const score = document.querySelector('#score');
+const main = document.querySelector('main');
+let thisQuiz = undefined;
+let typeofQuiz = undefined;
+
+$(document).ready(function() {
+	$('main').fadeIn(700);
+});
+
 //create function to display current question
+function showCurrentQuestion() {
+	const currentQuestion = thisQuiz.getCurrentQuestion();
+	document.querySelector('.question').textContent =
+		currentQuestion.singleQuestion;
+	questionNumber.innerHTML = `Question ${thisQuiz.questionNum + 1}`;
+	let answersList = document.createElement('ul');
+	for (let i = 0; i < currentQuestion.possibleAnswers.length; i++) {
+		let answersItem = document.createElement('li');
+		let replacedItem = currentQuestion.possibleAnswers[i]
+			.split(' ')
+			.join('')
+			.replace(',', '')
+			.replace(':', '')
+			.replace('.', '')
+			.replace("'", '')
+			.replace('/', '')
+			.toLowerCase();
+		let indexOfDash = replacedItem.indexOf('-');
+		if (indexOfDash >= 0) {
+			replacedItem = replacedItem.substring(0, indexOfDash);
+		}
+		replacedItem = `images/${replacedItem}.jpg`;
+		let image = document.createElement('img');
+		image.setAttribute('src', replacedItem);
+		answersItem.textContent = currentQuestion.possibleAnswers[i];
+		answersItem.appendChild(image);
+		answersList.appendChild(answersItem);
+	}
+	answers.innerHTML = '';
+	answers.appendChild(answersList);
+
+	$('.welcome').fadeOut(500, () => {
+		$('.question-container').fadeIn();
+	});
+}
+
 //add event listener for season 1-5 quiz button
 //add event listener for season 6-9 quiz button
 //add event listener for the next button
