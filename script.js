@@ -325,13 +325,13 @@ nextButton.addEventListener('click', function(e) {
 		const ranking = document.querySelector('.ranking');
 
 		if (typeofQuiz === 'seasonOneToFive') {
-			if (thisQuiz.score === 15) {
+			if (thisQuiz.score === 18) {
 				ranking.textContent =
 					"Perfect score! You must've seen each episode multiple times!";
-			} else if (thisQuiz.score >= 12) {
+			} else if (thisQuiz.score >= 14) {
 				ranking.textContent =
 					'Wow, you must really love The Office! Great job!';
-			} else if (thisQuiz.score >= 9) {
+			} else if (thisQuiz.score >= 10) {
 				ranking.textContent =
 					'Pretty good! You have seen The Office a few times, huh?';
 			} else if (thisQuiz.score >= 6) {
@@ -341,13 +341,13 @@ nextButton.addEventListener('click', function(e) {
 				ranking.textContent = 'The Office. Ever heard of it?';
 			}
 		} else if (typeofQuiz === 'seasonSixToNine') {
-			if (thisQuiz.score === 15) {
+			if (thisQuiz.score === 18) {
 				ranking.textContent =
 					"Perfect score! You must've seen each episode multiple times!";
-			} else if (thisQuiz.score >= 12) {
+			} else if (thisQuiz.score >= 14) {
 				ranking.textContent =
 					'Wow, you must really love The Office! Great job!';
-			} else if (thisQuiz.score >= 9) {
+			} else if (thisQuiz.score >= 10) {
 				ranking.textContent =
 					'Pretty good! You have seen The Office a few times, huh?';
 			} else if (thisQuiz.score >= 6) {
