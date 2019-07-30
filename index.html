@@ -4,31 +4,33 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>"the Office" | the Dundies</title>
+		<link rel="stylesheet" href="style.css" />
 		<link
 			href="https://fonts.googleapis.com/css?family=Zilla+Slab&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="style.css" />
-		<title>"the Office" | the Dundies</title>
 	</head>
 	<body>
-		<header>
-			<h1><a href="index.html">the office</a></h1>
-			<h3>Welcome to The Dundies</h3>
-		</header>
-
 		<main>
-			<div class="intro">
-				<h2><span>Welcome to</span><br />"the Office"<br />Trivia Game</h2>
+			<div>
+				<h2><span>Welcome to</span><br />The Dundies</h2>
+				<h5>hosted by Michael Gary Scott</h5>
 				<p>
-					Dwight K. Schrute claims that he knows everything there is to
-					know about Dunder Mifflin's Scranton branch. Can you prove him
-					wrong by answering the winners of each of the following Dundies
-					award? Click the button below to begin.
+					Dwight K. Schrute claims that he is the only one that knows
+					everything about Dunder Mifflin - Scranton. Can you prove him
+					wrong by selecting all of the correct Dundie Award winners?<br />
+					<br />
+					Seasons 1-5 and Seasons 6-9 are split into two quizzes.<br />
+					Click a button below for either Seasons 1-5 or Seasons 6-9.
 				</p>
 				<div class="quiz-type-container">
-					<a class="quiz-type-btn" id="short-quiz" href="#"
-						>Begin the ceremony!</a
+					<a class="quiz-type-button" id="old-quiz" href="#"
+						>Seasons 1-5</a
+					>
+					<br />
+					<a class="quiz-type-button" id="new-quiz" href="#"
+						>Seasons 6-9</a
 					>
 				</div>
 			</div>
@@ -37,14 +39,13 @@
 			<div class="question-container">
 				<div class="overlay">
 					<div id="result"></div>
-					<a href="#" class="next-btn quiz-type-btn">Next</a>
+					<a href="#" class="next-button quiz-type-button">Next</a>
 				</div>
 				<div class="question-number"></div>
 				<div class="question"></div>
 				<div class="answers"></div>
 			</div>
 		</main>
-
 		<footer></footer>
 		<script src="script.js"></script>
 	</body>
