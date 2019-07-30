@@ -83,7 +83,7 @@ const questionsOneToFive = [
 	),
 	new Question(
 		"Who won the Hunter's Secret Lover Award?",
-		['Pam', 'Jan', 'Kelly', 'Angela', 'Erin'],
+		['Pam', 'Jan', 'Kelly', 'Holly', 'Erin'],
 		'Jan'
 	),
 	new Question(
@@ -127,7 +127,7 @@ const questionsSixToNine = [
 	),
 	new Question(
 		'Who won the Big William Hung Fan Award?',
-		['Clark', 'Angela', 'Dwight', 'Todd', 'Hank'],
+		['Danny', 'Angela', 'Dwight', 'Todd', 'Hank'],
 		'Todd'
 	),
 	new Question(
@@ -137,17 +137,17 @@ const questionsSixToNine = [
 	),
 	new Question(
 		'Who won the Lizard King Award?',
-		['Ryan', 'Gabe', 'Robert', 'Jan', 'Kelly'],
+		['Toby', 'Gabe', 'Robert', 'Plop', 'Oscar'],
 		'Robert'
 	),
 	new Question(
-		'Who won the This Job Is A Joke Award?',
+		"Who won the This Job's A Joke Award?",
 		['Deangelo', 'Meredith', 'Clark', 'Danny', 'Jim'],
 		'Deangelo'
 	),
 	new Question(
 		'Who won the Shut Up About The Sun Award?',
-		['Jim', 'Gabe', 'Erin', 'Kevin', 'David'],
+		['Jim', 'Gabe', 'Erin', 'Kevin', 'Deangelo'],
 		'Gabe'
 	),
 	new Question(
@@ -177,7 +177,7 @@ const questionsSixToNine = [
 	),
 	new Question(
 		'Who won the Nice To Meet Me Award?',
-		['DateMike', 'Andy', 'Creed', 'Dwight', 'Jan'],
+		['DateMike', 'Andy', 'Creed', 'Hank', 'Jan'],
 		'DateMike'
 	),
 	new Question(
