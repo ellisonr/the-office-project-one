@@ -152,7 +152,7 @@ const questionsSixToNine = [
 	),
 	new Question(
 		'Who won the - Award?',
-		['Nellie', 'Jim', 'Toby', 'Kelly', 'Angela'],
+		['Nellie', 'Jim', 'Kelly', 'Toby', 'Angela'],
 		'Nellie'
 	),
 	new Question(
@@ -192,7 +192,7 @@ const questionsSixToNine = [
 	),
 	new Question(
 		'Who won the - Award?',
-		['Holly', 'Plop', 'Jo', 'Angela', 'Nellie'],
+		['Holly', 'Plop', 'Angela', 'Jo', 'Nellie'],
 		'Jo'
 	),
 ];
@@ -211,7 +211,7 @@ let thisQuiz = undefined;
 let typeofQuiz = undefined;
 
 $(document).ready(function() {
-	$('main').fadeIn(700);
+	$('main').fadeIn(600);
 });
 
 //create function to display current question
@@ -246,12 +246,92 @@ function showCurrentQuestion() {
 	answers.innerHTML = '';
 	answers.appendChild(answersList);
 
-	$('.welcome').fadeOut(500, () => {
+	$('.intro').fadeOut(450, () => {
 		$('.question-container').fadeIn();
 	});
 }
 
 //add event listener for season 1-5 quiz button
+oldQuizButton.addEventListener('click', function(e) {
+	e.preventDefault();
+	typeofQuiz = 'seasonOneToFive';
+	thisQuiz = new Quiz(questionsOneToFive);
+	showCurrentQuestion();
+});
+
 //add event listener for season 6-9 quiz button
-//add event listener for the next button
+newQuizButton.addEventListener('click', function(e) {
+	e.preventDefault();
+	typeofQuiz = 'seasonSixToNine';
+	thisQuiz = new Quiz(questionsSixToNine);
+	showCurrentQuestion();
+});
+
 //add event listeners for the actual answers
+answers.addEventListener('click', function(e) {
+	let answerValidity = thisQuiz
+		.getCurrentQuestion()
+		.isAnswerCorrect(e.target.textContent);
+	if (answerValidity) {
+		thisQuiz.increaseScore();
+		result.textContent = "You're right!";
+		$('.overlay').fadeIn(500);
+	} else {
+		result.innerHTML = `Sorry, that's incorrect. It's actually <br/>"${
+			thisQuiz.getCurrentQuestion().correctAnswer
+		}"`;
+		$('.overlay').fadeIn(500);
+	}
+});
+
+//add event listener for the next button
+nextButton.addEventListener('click', function(e) {
+	thisQuiz.nextQuestion();
+	const done = thisQuiz.areQuestionsDone();
+	if (done) {
+		main.innerHTML = `<h2>All done!</h2> <div class="final-score">You Scored:<br/><span>${
+			thisQuiz.score
+		}/${
+			thisQuiz.questions.length
+		}</span></div><div class="ranking"></div><div class="quiz-type-container"><a class="quiz-type-button" href="index.html" >Click to play again!</a></div>`;
+		const ranking = document.querySelector('.ranking');
+
+		if (typeofQuiz === 'seasonOneToFive') {
+			if (thisQuiz.score === 15) {
+				ranking.textContent =
+					"Perfect score! You must've seen each episode multiple times!";
+			} else if (thisQuiz.score >= 12) {
+				ranking.textContent =
+					'Wow, you must really love The Office! Great job!';
+			} else if (thisQuiz.score >= 9) {
+				ranking.textContent =
+					'Pretty good! You have seen The Office a few times, huh?';
+			} else if (thisQuiz.score >= 6) {
+				ranking.textContent =
+					'Not bad, but maybe you should watch these seasons more.';
+			} else if (thisQuiz.score <= 5) {
+				ranking.textContent = 'The Office. Ever heard of it?';
+			}
+		} else if (typeofQuiz === 'seasonSixToNine') {
+			if (thisQuiz.score === 15) {
+				ranking.textContent =
+					"Perfect score! You must've seen each episode multiple times!";
+			} else if (thisQuiz.score >= 12) {
+				ranking.textContent =
+					'Wow, you must really love The Office! Great job!';
+			} else if (thisQuiz.score >= 9) {
+				ranking.textContent =
+					'Pretty good! You have seen The Office a few times, huh?';
+			} else if (thisQuiz.score >= 6) {
+				ranking.textContent =
+					'Not bad, but maybe you should watch these seasons more.';
+			} else if (thisQuiz.score <= 5) {
+				ranking.textContent = 'The Office. Ever heard of it?';
+			}
+		}
+	} else {
+		showCurrentQuestion();
+		result.textContent = '';
+		$('.overlay').fadeOut(500);
+	}
+});
