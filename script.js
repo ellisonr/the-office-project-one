@@ -182,7 +182,7 @@ const questionsSixToNine = [
 	),
 	new Question(
 		'Who won the Co-Founder of the Group "Subtle Sexuality" Award?',
-		['Phyllis', 'Pam', 'Kelly', 'Erin', 'Ryan'],
+		['Phyllis', 'Pam', 'Michael', 'Erin', 'Ryan'],
 		'Erin'
 	),
 	new Question(
