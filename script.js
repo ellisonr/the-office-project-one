@@ -205,7 +205,6 @@ const nextButton = document.querySelector('.next-button');
 const answers = document.querySelector('.answers');
 const overlay = document.querySelector('.overlay');
 const result = document.querySelector('#result');
-const score = document.querySelector('#score');
 const main = document.querySelector('main');
 let thisQuiz = undefined;
 let typeofQuiz = undefined;

@@ -14,3 +14,30 @@ body {
 	text-align: center;
 	font-family: 'Zilla Slab', serif;
 }
+h1 {
+	font-size: 50px;
+	color: #28dcf0;
+	text-align: center;
+	padding: 14px 0 8px;
+	font-family: 'Zilla Slab', serif;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-image: -webkit-linear-gradient(
+		top,
+		#01cde4 0,
+		#28dcf0 50%,
+		#12d0fa 100%
+	);
+}
+main {
+	display: none;
+	box-shadow: 0 0px 30px 1px rgba(0, 0, 0, 0.3);
+	width: 90%;
+	height: auto;
+	padding: 5% 5%;
+	border-top: 10px solid #eb4b4b;
+	border-bottom: 10px solid #eb4b4b;
+	margin: 30px auto 30px;
+	background: white;
+	position: relative;
+}
