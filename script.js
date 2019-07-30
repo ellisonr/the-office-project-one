@@ -293,7 +293,7 @@ nextButton.addEventListener('click', function(e) {
 			thisQuiz.score
 		}/${
 			thisQuiz.questions.length
-		}</span></div><div class="ranking"></div><div class="quiz-type-container"><a class="quiz-type-button" href="index.html" >Click to play again!</a></div>`;
+		}</span></div><div class="ranking"></div><div class="quiz-type-container"><a class="quiz-type-button" href="index.html" >Play again?</a></div>`;
 		const ranking = document.querySelector('.ranking');
 
 		if (typeofQuiz === 'seasonOneToFive') {
