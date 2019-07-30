@@ -53,57 +53,57 @@ const questionsOneToFive = [
 	),
 	new Question(
 		'Who won the Where Is That Rundown Award?',
-		['Kevin', 'Phyllis', 'Karen', 'Charles', 'Creed'],
+		['David', 'Jan', 'Karen', 'Charles', 'Creed'],
 		'Charles'
 	),
 	new Question(
-		'Who won the - Award?',
-		['Ryan', 'Jim', 'Jan', 'Michael', 'Angela'],
+		'Who won the Athleap/Athlead Investor Award?',
+		['Ryan', 'Jim', 'Jan', 'Michael', 'Darryl'],
 		'Jim'
 	),
 	new Question(
 		'Who won the I Survived The Dementors Award?',
-		['Creed', 'PrisonMike', 'Pam', 'Roy', 'Kelly'],
+		['Oscar', 'PrisonMike', 'Pam', 'Roy', 'Kelly'],
 		'PrisonMike'
 	),
 	new Question(
-		'Who won the - Award?',
+		"Who won the Lackawanna County Volunteer Sheriff's Deputy Award?",
 		['Jim', 'Darryl', 'Dwight', 'Angela', 'Meredith'],
 		'Dwight'
 	),
 	new Question(
 		'Who won the Not An Alcoholic Award?',
-		['Jim', 'Oscar', 'Michael', 'Devon', 'Meredith'],
+		['Kevin', 'Oscar', 'Michael', 'Devon', 'Meredith'],
 		'Meredith'
 	),
 	new Question(
-		'Who won the - Award?',
+		'Who won the Founder of Suck It Award?',
 		['David', 'Stanley', 'Pam', 'Tony', 'Todd'],
 		'David'
 	),
 	new Question(
-		'Who won the - Award?',
-		['Michael', 'Jan', 'Oscar', 'Angela', 'Toby'],
+		"Who won the Hunter's Secret Lover Award?",
+		['Pam', 'Jan', 'Kelly', 'Angela', 'Erin'],
 		'Jan'
 	),
 	new Question(
 		'Who won the Your Teeth Called, Your Breath Stinks Award?',
-		['Kelly', 'Andy', 'Creed', 'David', 'Meredith'],
+		['Tony', 'Todd', 'Creed', 'David', 'Meredith'],
 		'Creed'
 	),
 	new Question(
-		'Who won the - Award?',
-		['Pam', 'Roy', 'Charles', 'Dwight', 'Karen'],
+		'Who won the Worst Fiance Award?',
+		['Jim', 'Roy', 'Charles', 'Michael', 'Stanley'],
 		'Roy'
 	),
 	new Question(
-		'Who won the - Award?',
-		['Dwight', 'Creed', 'Stanley', 'Phyllis', 'Michael'],
+		'Who won the Most Likely To Mind His Business Award?',
+		['Dwight', 'Creed', 'Stanley', 'David', 'Devon'],
 		'Stanley'
 	),
 	new Question(
-		'Who won the - Award?',
-		['Meredith', 'Karen', 'Darryl', 'Roy', 'Oscar'],
+		'Who won the Maybe Filipino, But Definitely Italian Award?',
+		['Meredith', 'Karen', 'Erin', 'Gabe', 'Todd'],
 		'Karen'
 	),
 	new Question(
@@ -113,7 +113,7 @@ const questionsOneToFive = [
 	),
 	new Question(
 		'Who won the I Was Fired Instead Of Creed Award?',
-		['Michael', 'Devon', 'Dwight', 'Kelly', 'Jan'],
+		['Tony', 'Devon', 'Dwight', 'Todd', 'Andy'],
 		'Devon'
 	),
 ];
@@ -121,8 +121,8 @@ const questionsOneToFive = [
 //questions for Seasons 6-9
 const questionsSixToNine = [
 	new Question(
-		'Who won the Longest Engagement Award?',
-		['Kelly', 'Holly', 'Plop', 'Erin', 'Jan'],
+		'Who won the Most Likely To Track Down Michael Award?',
+		['Kelly', 'Holly', 'Plop', 'Dwight', 'Jan'],
 		'Holly'
 	),
 	new Question(
@@ -131,18 +131,18 @@ const questionsSixToNine = [
 		'Todd'
 	),
 	new Question(
-		'Who won the - Award?',
+		"Who won the I've Learned To Tune Myself Out Award?",
 		['Nellie', 'Stanley', 'Kelly', 'Andy', 'Meredith'],
 		'Kelly'
 	),
 	new Question(
-		'Who won the - Award?',
+		'Who won the Lizard King Award?',
 		['Ryan', 'Gabe', 'Robert', 'Jan', 'Kelly'],
 		'Robert'
 	),
 	new Question(
 		'Who won the This Job Is A Joke Award?',
-		['Deangelo', 'Meredith', 'Clark', 'Danny', 'Michael'],
+		['Deangelo', 'Meredith', 'Clark', 'Danny', 'Jim'],
 		'Deangelo'
 	),
 	new Question(
@@ -151,48 +151,48 @@ const questionsSixToNine = [
 		'Gabe'
 	),
 	new Question(
-		'Who won the - Award?',
-		['Nellie', 'Jim', 'Kelly', 'Toby', 'Angela'],
+		"Who won the Sabre's President of Special Projects Award?",
+		['Nellie', 'Todd', 'Stanley', 'Darryl', 'Jo'],
 		'Nellie'
 	),
 	new Question(
-		'Who won the - Award?',
-		['Meredith', 'Michael', 'Toby', 'Plop', 'Charles'],
+		'Who won the Knows The Film Die Hard By Heart Award?',
+		['Clark', 'Michael', 'Toby', 'Plop', 'Charles'],
 		'Plop'
 	),
 	new Question(
 		'Who won the Dwight Junior Award?',
-		['Clark', 'Nellie', 'Erin', 'Ryan', 'Darryl'],
+		['Ryan', 'Kevin', 'Plop', 'Clark', 'David'],
 		'Clark'
 	),
 	new Question(
-		'Who won the - Award?',
-		['Phyllis', 'Pam', 'David', 'Erin', 'Dwight'],
+		'Who won the Co-Founder of the Group "Subtle Sexuality" Award?',
+		['Phyllis', 'Pam', 'Kelly', 'Erin', 'Ryan'],
 		'Erin'
 	),
 	new Question(
 		'Who won the Most Likely To Have Two Sets Of Men Duel Over Her Award?',
-		['Michael', 'Angela', 'Kevin', 'Toby', 'Meredith'],
+		['Karen', 'Angela', 'Pam', 'Phyllis', 'Meredith'],
 		'Angela'
 	),
 	new Question(
-		'Who won the - Award?',
+		'Who won the Nice To Meet Me Award?',
 		['DateMike', 'Andy', 'Creed', 'Dwight', 'Jan'],
 		'DateMike'
 	),
 	new Question(
-		'Who won the - Award?',
-		['Plop', 'Robert', 'Jo', 'Gabe', 'Plop'],
+		'Who won the World Series of Poker Bracelet Winner Award?',
+		['Plop', 'Robert', 'Jo', 'Gabe', 'Kevin'],
 		'Kevin'
 	),
 	new Question(
-		'Who won the - Award?',
+		'Who won the Nissan Xterra Award?',
 		['Kelly', 'Andy', 'Deangelo', 'Hank', 'Erin'],
 		'Andy'
 	),
 	new Question(
-		'Who won the - Award?',
-		['Holly', 'Plop', 'Angela', 'Jo', 'Nellie'],
+		'Who won the Gun Collector Award?',
+		['Robert', 'Dwight', 'Oscar', 'Jo', 'Nellie'],
 		'Jo'
 	),
 ];
@@ -210,7 +210,7 @@ let thisQuiz = undefined;
 let typeofQuiz = undefined;
 
 $(document).ready(function() {
-	$('main').fadeIn(600);
+	$('main').fadeIn(400);
 });
 
 //create function to display current question
@@ -245,7 +245,7 @@ function showCurrentQuestion() {
 	answers.innerHTML = '';
 	answers.appendChild(answersList);
 
-	$('.intro').fadeOut(450, () => {
+	$('.intro').fadeOut(400, () => {
 		$('.question-container').fadeIn();
 	});
 }
@@ -274,12 +274,12 @@ answers.addEventListener('click', function(e) {
 	if (answerValidity) {
 		thisQuiz.increaseScore();
 		result.textContent = "You're right!";
-		$('.overlay').fadeIn(500);
+		$('.overlay').fadeIn(400);
 	} else {
 		result.innerHTML = `Sorry, that's incorrect. It's actually <br/>"${
 			thisQuiz.getCurrentQuestion().correctAnswer
 		}"`;
-		$('.overlay').fadeIn(500);
+		$('.overlay').fadeIn(400);
 	}
 });
 
@@ -331,6 +331,6 @@ nextButton.addEventListener('click', function(e) {
 	} else {
 		showCurrentQuestion();
 		result.textContent = '';
-		$('.overlay').fadeOut(500);
+		$('.overlay').fadeOut(400);
 	}
 });
