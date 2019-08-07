@@ -107,7 +107,7 @@ const questionsOneToFive = [
 		'Karen'
 	),
 	new Question(
-		'Who won the Bushiest Beaver Award?',
+		'Who won the Bob Vance Paid $1,000 To Hug Me Award?',
 		['Phyllis', 'Michael', 'Ryan', 'Pam', 'Kevin'],
 		'Phyllis'
 	),
@@ -252,14 +252,7 @@ function showCurrentQuestion() {
 	let answersList = document.createElement('ul');
 	for (let i = 0; i < currentQuestion.possibleAnswers.length; i++) {
 		let answersItem = document.createElement('li');
-		let replacedItem = currentQuestion.possibleAnswers[i]
-			.split(' ')
-			.join('')
-			.replace(',', '')
-			.replace(':', '')
-			.replace('.', '')
-			.replace("'", '')
-			.replace('/', '');
+		let replacedItem = currentQuestion.possibleAnswers[i];
 		let indexOfDash = replacedItem.indexOf('-');
 		if (indexOfDash >= 0) {
 			replacedItem = replacedItem.substring(0, indexOfDash);
